@@ -1,32 +1,32 @@
 export const SIDEBAR = [
   {
     text: "Home",
-    link: "/",
+    link: "",
     children: [],
   },
   {
     text: "Start a Team",
-    link: "/coming-soon",
+    link: "coming-soon",
   },
   {
     text: "Volunteer",
-    link: "/coming-soon",
+    link: "coming-soon",
   },
   {
     text: "Team Resources",
-    link: "/coming-soon",
+    link: "coming-soon",
     // children: [{ text: "Archives", link: "/resources/archives" }],
   },
   {
     text: "Sponsors",
-    link: "/coming-soon",
+    link: "coming-soon",
   },
   {
     text: "About",
-    link: "/coming-soon",
+    link: "coming-soon",
   },
   {
     text: "Contact Us",
-    link: "/coming-soon",
+    link: "coming-soon",
   },
 ];
