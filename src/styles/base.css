@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.logo{
+	h2 {
+		@apply text-2xl;
+		text-align: center;
+		margin-bottom: 10px;
+	}
+}
+
+.nav {
+	padding-top: 25px;
+}
+
+.markdown a,
+.markdown a li {
+	@apply text-blue-900 dark:text-blue-400 underline;
+}
+
+.markdown h1 {
+	@apply text-lg font-semibold;
+}
+
+.markdown h2 {
+	@apply font-semibold mt-3 mb-2;
+}
+
+.markdown ul {
+	@apply list-disc pl-6;
+}
+
+.markdown blockquote {
+	@apply pl-3;
+}
