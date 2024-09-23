@@ -1,6 +1,7 @@
 ---
 import { SIDEBAR } from "../data/sidebar.js";
 const { pathname } = new URL(Astro.request.url);
+const BASE_URL = import.meta.env.BASE_URL;
 ---
 
 <nav
@@ -11,7 +12,7 @@ const { pathname } = new URL(Astro.request.url);
 			<a href="/fllnl-website/">
 				<div class="flex justify-center items-center">
 					<img
-						src="/fllnl-website/assets/first-logo.png"
+						src={`${BASE_URL}/assets/first-logo.png`}
 						class="mx-auto md:mx-0 my-4 w-3/4 dark:invert py-1 px-1 lg:px-4 2xl:px-5"
 					/>
 				</div>
@@ -23,7 +24,7 @@ const { pathname } = new URL(Astro.request.url);
 				SIDEBAR.map((section) => (
 					<li>
 						<a
-							href={section.link}
+							href={`${BASE_URL}${section.link}`}
 							class="hover:underline"
 							aria-current={section.link === pathname ? "true" : "false"}
 						>
@@ -34,7 +35,7 @@ const { pathname } = new URL(Astro.request.url);
 								{section.children?.map((child) => (
 									<li>
 										<a
-											href={child.link}
+											href={`${BASE_URL}${child.link}`}
 											class="hover:underline"
 											aria-current={child.link === pathname ? "true" : "false"}
 										>
@@ -45,7 +46,7 @@ const { pathname } = new URL(Astro.request.url);
 												{child.children?.map((nested) => (
 													<li>
 														<a
-															href={nested.link}
+															href={`${BASE_URL}${nested.link}`}
 															class="hover:underline text-sm"
 															aria-current={
 																nested.link === pathname ? "true" : "false"

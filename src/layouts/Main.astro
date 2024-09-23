@@ -2,20 +2,21 @@
 import LeftSidebar from "../components/LeftSidebar.astro";
 import "../styles/base.css";
 const { title } = Astro.props;
+const BASE_URL = import.meta.env.BASE_URL;
 ---
 
 <html lang="en" class="h-full">
 	<head>
 		<meta name="viewport" content="width=device-width" />
 
-		<link rel="apple-touch-icon" sizes="180x180" href="/fllnl-website/assets/apple-touch-icon.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="/fllnl-website/assets/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="/fllnl-website/assets/favicon-16x16.png">
-		<link rel="manifest" href="/fllnl-website/assets/site.webmanifest">
-		<link rel="mask-icon" href="/fllnl-website/assets/safari-pinned-tab.svg" color="#5bbad5">
-		<link rel="shortcut icon" href="/fllnl-website/assets/favicon.ico">
+		<link rel="apple-touch-icon" sizes="180x180" href={`${BASE_URL}/assets/apple-touch-icon.png`}>
+		<link rel="icon" type="image/png" sizes="32x32" href={`${BASE_URL}/assets/favicon-32x32.png`}>
+		<link rel="icon" type="image/png" sizes="16x16" href={`${BASE_URL}/assets/favicon-16x16.png`}>
+		<link rel="manifest" href={`${BASE_URL}/assets/site.webmanifest`}>
+		<link rel="mask-icon" href={`${BASE_URL}/assets/safari-pinned-tab.svg`} color="#5bbad5">
+		<link rel="shortcut icon" href={`${BASE_URL}/assets/favicon.ico`}>
 		<meta name="msapplication-TileColor" content="#da532c">
-		<meta name="msapplication-config" content="/fllnl-website/assets/browserconfig.xml">
+		<meta name="msapplication-config" content={`${BASE_URL}/assets/browserconfig.xml`}>
 		<meta name="theme-color" content="#ffffff">
 
 		<meta name="title" content=">FLL-NL | {title}">
