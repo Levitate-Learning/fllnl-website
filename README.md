@@ -1,4 +1,4 @@
-# First Lego League Newfoundland and Labrador Website
+# First LEGO League Newfoundland and Labrador Website
 
 https://fllnl.org/
 
