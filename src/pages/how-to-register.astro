@@ -1,0 +1,102 @@
+---
+import Main from "../layouts/Main.astro";
+const title = "How to Register";
+const BASE_URL = import.meta.env.BASE_URL;
+---
+
+<Main title={title}>
+	<h1>{title}</h1>
+	<h2>Register For the Skills Canada Competition</h2>
+	<p>
+		To participate at the FIRST Lego Competition, teams are first required to sign up for the Skills Canada competition.
+		The form to register can be found
+		<a href="https://docs.google.com/forms/d/e/1FAIpQLSe9t_Z6tERIcqnC-nXlniQDdiaum3Y4_x2XmA6fYt9_PJa0OA/viewform">here</a>.
+		When you get to the <b>“Contest Area Registration”</b> part of the form, select <b>“FIRST Lego”</b>.
+	</p>
+	<p>
+		More information about the Skills Canada competition can be found here.
+	</p>
+
+	<h2>Create a Team on the FIRST Dashboard</h2>
+	<p>
+		Click <a href="https://www.firstinspires.org/">here</a> to sign in with your existing username and password OR to
+		create a new user account. You can then register a team by either updating an existing team profile or by creating
+		a new one. This <a href="https://drive.google.com/file/d/13ApLwcIwKjYeFDRUddXJEv6nlkNoA9UR/view?usp=sharing">video</a>
+		will help guide you through the process of creating a new team.
+	</p>
+
+	<h2>Complete the Youth Protection Plan (YPP) Screening</h2>
+	<p>
+		FIRST Robotics <b>requires both</b> coaches to complete a Complete Youth Protection Plan (YPP) screening and to sign
+		a <b>FIRST consent & release form</b>, before beginning regular involvement with the team. The “passed” status of
+		which will remain valid for 48 months.
+	</p>
+	<p>
+		The YPP Screening can be found by clicking your name in the top right corner of the FIRST Dashboard. A menu should
+		appear. Within that menu, select <b>“Youth Protection Screening”</b>.
+	</p>
+	<p>
+		<a href={`${BASE_URL}assets/register-first-dashboard-1.png`} target="_blank">
+			<img
+				src={`${BASE_URL}assets/register-first-dashboard-1.png`}
+				alt="Location of the 'Youth Protection Screening' menu item in the FIRST dashboard"
+			/>
+		</a>
+	</p>
+
+	<h2>Sign the FIRST Consent & Release Form</h2>
+	<p>
+		The FIRST Consent & Release Form can be found by clicking your name in the top right corner of the FIRST Dashboard.
+		A menu should appear. Within that menu, select <b>“Acknowledgement Forms”</b>.
+	</p>
+	<p>
+		<a href={`${BASE_URL}assets/register-first-dashboard-2.png`} target="_blank">
+			<img
+				src={`${BASE_URL}assets/register-first-dashboard-2.png`}
+				alt="Location of the 'Acknowledgement Forms' menu item in the FIRST dashboard"
+			/>
+		</a>
+	</p>
+
+	<h2>Add Your 2nd Coach</h2>
+	<p>
+		FIRST Lego teams are required to have two coaches/mentors. To add a 2nd coach, you must first click the
+		<b>“Contact Options”</b> button under Team Contacts/Roster for your team on the FIRST dashboard. This should open a
+		menu. On this menu select <b>“Manage Contacts”</b>. This will bring you to the team contacts for your team. Scroll
+		down to <b>“Team Leadership”</b> and select <b>“Invite Contacts (Legacy)”</b>. This will bring you to a new page
+		where you can invite your 2nd coach/mentor.
+	</p>
+
+	<h2>Pay Your Skills Canada Registration</h2>
+	<p>
+		Please <b>mail</b> or <b>drop</b> off the Registration Fee ($10 per student) to Skills Canada NL:
+	</p>
+	<address>
+		Town Square<br/>
+		75 Barbour Drive<br/>
+		Mount Pearl<br/>
+		Newfoundland and Labrador<br/>
+		Canada<br/>
+		A1N 2X3
+	</address>
+
+	<h2>Receive Your Free FIRST Canada Registration</h2>
+	<p>
+		To have your FIRST registration fee waived, you will need to add FIRST Newfoundland & Labrador as your team
+		administrator. Once Skills Canada has received your registration, we will pay for your FIRST registration.
+	</p>
+	<p>
+		If your team has a team administrator already, they can be re-added once the registration fee is processed.
+	</p>
+	<p>
+		To add FIRST Newfoundland & Labrador as your team administrator, click the <b>“Contact Options”</b> button under
+		<b>"Team Contacts/Roster"</b> for your team on the FIRST dashboard. This should open a menu. On this menu select
+		<b>“Manage Contacts”</b>. This will bring you to the team contacts for your team.
+	</p>
+
+	<p>
+		Scroll down to <b>“Team Leadership”</b> and select <b>“Invite Contacts (Legacy)”</b>. When adding FIRST Newfoundland
+		& Labrador as a team administrator, select <b>“Team Administrator”</b> as the contact type and
+		<b>atroake@firstpartners.org</b> as the email address.
+	</p>
+</Main>
