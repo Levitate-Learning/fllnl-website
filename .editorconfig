@@ -1,9 +1,12 @@
 root = true
 
+[*]
+tab_width = 4
+indent_style = tab
+
 [package.json]
 tab_width = 2
 indent_style = space
 
 [*.astro]
 tab_width = 2
-indent_style = tab
