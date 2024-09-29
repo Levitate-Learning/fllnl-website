@@ -4,8 +4,7 @@ import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
-	site: "https://levitate-learning.github.io/",
-	base: '',
+	site: "https://fllnl.org/",
 	sitemap: true,
 	integrations: [react(), tailwind({ config: { applyBaseStyles: false } })],
 });
