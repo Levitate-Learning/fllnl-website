@@ -9,7 +9,7 @@ const BASE_URL = import.meta.env.BASE_URL;
 >
 	<div class="divide-y divide-gray-300 divide-double">
 		<div class="logo">
-			<a href="/fllnl-website/">
+			<a href="/">
 				<div class="flex justify-center items-center">
 					<img
 						src={`${BASE_URL}assets/first-logo.png`}
@@ -42,23 +42,24 @@ const BASE_URL = import.meta.env.BASE_URL;
 										>
 											{child.text}
 										</a>
-										{child.children !== undefined && child.link === pathname && (
-											<ul class="pl-2">
-												{child.children?.map((nested) => (
-													<li>
-														<a
-															href={`${BASE_URL}${nested.link}`}
-															class="hover:underline text-sm"
-															aria-current={
-																nested.link === pathname ? "true" : "false"
-															}
-														>
-															{nested.text}
-														</a>
-													</li>
-												))}
-											</ul>
-										)}
+										{child.children !== undefined &&
+											child.link === pathname && (
+												<ul class="pl-2">
+													{child.children?.map((nested) => (
+														<li>
+															<a
+																href={`${BASE_URL}${nested.link}`}
+																class="hover:underline text-sm"
+																aria-current={
+																	nested.link === pathname ? "true" : "false"
+																}
+															>
+																{nested.text}
+															</a>
+														</li>
+													))}
+												</ul>
+											)}
 									</li>
 								))}
 							</ul>
