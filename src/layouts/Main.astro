@@ -1,8 +1,9 @@
 ---
 import LeftSidebar from "../components/LeftSidebar.astro";
 import "../styles/base.css";
-const { title } = Astro.props;
 const BASE_URL = import.meta.env.BASE_URL;
+
+const title = Astro.props.title || Astro.props.frontmatter.title;
 ---
 
 <html lang="en" class="h-full">
@@ -19,7 +20,7 @@ const BASE_URL = import.meta.env.BASE_URL;
 		<meta name="msapplication-config" content={`${BASE_URL}assets/browserconfig.xml`}>
 		<meta name="theme-color" content="#ffffff">
 
-		<meta name="title" content=">FLL-NL | {title}">
+		<meta name="title" content={`FLL-NL | ${title}`}>
 		<meta name="description" content="Official website of the FIRST LEGO League Newfoundland & Labrador">
 		<meta name="keywords" content="lego, first, robotics, newfoundland">
 		<meta name="robots" content="index, follow">
