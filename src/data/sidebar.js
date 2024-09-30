@@ -5,9 +5,11 @@ export const SIDEBAR = [
 		children: [],
 	},
 	{
-		text: "Start a Team",
-		link: "start-a-team",
-		children: [{ text: "How to Register", link: "how-to-register" }],
+		text: "FLL Challenge",
+		link: "fll-challenge",
+		children: [
+			{text: "How to Register", link: "how-to-register"},
+		],
 	},
 	{
 		text: "Volunteer",
