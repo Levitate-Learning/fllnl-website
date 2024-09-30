@@ -2,7 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-.logo{
+.prose {
+	p {
+		text-align: justify;
+	}
+}
+
+.logo {
 	h2 {
 		@apply text-2xl;
 		text-align: center;
