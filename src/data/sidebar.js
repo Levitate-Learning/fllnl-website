@@ -8,6 +8,7 @@ export const SIDEBAR = [
 		text: "FLL Challenge",
 		link: "fll-challenge",
 		children: [
+			{text: "Start a Team", link: "start-a-team"},
 			{text: "How to Register", link: "how-to-register"},
 		],
 	},
