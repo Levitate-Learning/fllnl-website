@@ -18,6 +18,11 @@
 
 .nav {
 	padding-top: 25px;
+	padding-left: 10px;
+
+	h2 {
+		margin-top: 10px;
+	}
 }
 
 .page {
