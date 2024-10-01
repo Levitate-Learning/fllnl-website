@@ -1,12 +1,11 @@
 ---
-import TOCHeading from './TOCHeading.astro';
+import TOCHeading from "./TOCHeading.astro";
 
 function buildHierarchy(headings: any) {
 	const toc: any[] = [];
 	const parentHeadings = new Map();
 
-	if (!headings)
-		return toc;
+	if (!headings) return toc;
 
 	headings.forEach((h: any) => {
 		const heading = { ...h, subheadings: [] };
@@ -23,15 +22,17 @@ function buildHierarchy(headings: any) {
 }
 
 const toc = buildHierarchy(Astro.props.headings);
-
 ---
-{toc && toc.length > 0 && (
-<nav class="toc">
-	<h2>Table of Contents</h2>
-	<ul>
-		{toc.map((heading) => (
-			<TOCHeading heading={heading} />
-		))}
-	</ul>
-</nav>
-)}
+
+{
+	toc && toc.length > 0 && (
+		<nav class="toc sticky top-0">
+			<h2>Table of Contents</h2>
+			<ul>
+				{toc.map((heading) => (
+					<TOCHeading heading={heading} />
+				))}
+			</ul>
+		</nav>
+	)
+}
