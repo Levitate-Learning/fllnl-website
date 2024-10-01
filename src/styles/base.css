@@ -31,6 +31,18 @@
 	}
 }
 
+span.trademark::after {
+	content: "™";
+	vertical-align: super;
+	font-size: 0.60em;
+}
+
+span.rtrademark::after {
+	content: "®";
+	vertical-align: super;
+	font-size: 0.60em;
+}
+
 .toc {
 	margin-left: 10px;
 	margin-bottom: 30px;
