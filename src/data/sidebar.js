@@ -27,7 +27,7 @@ export const SIDEBAR = [
 	},
 	{
 		text: "About",
-		link: "coming-soon",
+		link: "about",
 	},
 	{
 		text: "Contact Us",
