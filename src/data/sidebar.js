@@ -18,7 +18,7 @@ export const SIDEBAR = [
 	},
 	{
 		text: "Team Resources",
-		link: "coming-soon",
+		link: "team-resources",
 		// children: [{ text: "Archives", link: "/resources/archives" }],
 	},
 	{
