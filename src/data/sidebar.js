@@ -23,7 +23,7 @@ export const SIDEBAR = [
 	},
 	{
 		text: "Sponsors",
-		link: "coming-soon",
+		link: "sponsors",
 	},
 	{
 		text: "About",
