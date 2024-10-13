@@ -31,6 +31,6 @@ export const SIDEBAR = [
 	},
 	{
 		text: "Contact Us",
-		link: "coming-soon",
+		link: "contact-us",
 	},
 ];
