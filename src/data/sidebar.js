@@ -13,8 +13,12 @@ export const SIDEBAR = [
 		],
 	},
 	{
-		text: "Volunteer",
-		link: "coming-soon",
+		text: "Volunteering",
+		link: "volunteering",
+		children: [
+			{text: "Event Volunteers", link: "event-volunteers"},
+			{text: "How to Volunteer", link: "how-to-volunteer"},
+		],
 	},
 	{
 		text: "Team Resources",
