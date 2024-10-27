@@ -31,6 +31,10 @@
 	}
 }
 
+.italic {
+	font-style: italic;
+}
+
 span.trademark::after {
 	content: "™";
 	vertical-align: super;
