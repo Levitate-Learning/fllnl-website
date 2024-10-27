@@ -67,8 +67,27 @@ span.rtrademark::after {
 	li {
 		margin-bottom: 1.2em;
 	}
+
+	li.heading-1 {
+		font-size: 1em;
+		ul {
+			margin-top: 15px;
+		}
+	}
+
+	li.heading-2 {
+		padding-left: 1em;
+		font-size: 0.95em;
+	}
+
+	li.heading-3 {
+		padding-left: 1.5em;
+		font-size: 0.9em;
+	}
+
 	a {
 		text-decoration: underline;
 		font-weight: 500;
 	}
+
 }

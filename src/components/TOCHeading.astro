@@ -1,7 +1,7 @@
 ---
 const { heading } = Astro.props;
 ---
-<li>
+<li class={`heading-${heading.depth}`}>
 	<a href={'#' + heading.slug}>
 		{heading.text}
 	</a>
