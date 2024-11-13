@@ -1,0 +1,58 @@
+---
+layout: ../layouts/Main.astro
+title: 2024 Season Sponsors
+full: true
+---
+
+export const BASE_URL = import.meta.env.BASE_URL;
+
+# 2024 Season Sponsors
+
+<p className="max-w-md mx-auto mt-2">
+	Our heartfelt thanks to all the sponsors, suppliers, partners, and individuals who have helped us make an impact on the youth of Newfoundland and Labrador.
+</p>
+
+Hydro - Silver
+Bluedrop  - Silver
+PegNL - Silver
+Oram's Ready Mix - Bronze
+
+<ol className="sponsors-tiers relative">
+	<li className="sponsors-tier platinum">
+		<h2 className="sponsors-tier-name"><span>Platinum</span></h2>
+		<h3>Contact us to be our first Platinum sponsor!</h3>
+	</li>
+
+
+	<li className="sponsors-tier gold">
+		<h2 className="sponsors-tier-name"><span>Gold</span></h2>
+
+		<h3>Contact us to be our first Gold sponsor!</h3>
+	</li>
+
+	<li className="sponsors-tier silver">
+		<h2 className="sponsors-tier-silver"><span>Silver</span></h2>
+
+		<ul className="sponsors-by-tier">
+			<li>
+				<div className="image">
+					<a target="_blank" title="Professional Engineers and Geoscientists Newfoundland and Labrador" href="https://pegnl.ca/?source=fllnl">
+						<img src={`${BASE_URL}assets/pegnl-logo.svg`} loading="lazy" alt="Professional Engineers and Geoscientists Newfoundland and Labrador"/>
+					</a>
+				</div>
+			</li>
+		</ul>
+	</li>
+
+	<li className="sponsors-tier bronze">
+		<h2 className="sponsors-tier-bronze"><span>Bronze</span></h2>
+
+		<ul className="sponsors-by-tier">
+			<li>
+				<div className="image">
+					<img src={`${BASE_URL}assets/orams-ready-mix-logo.png`} loading="lazy" alt="Oram's Ready Mix"/>
+				</div>
+			</li>
+		</ul>
+	</li>
+</ol>

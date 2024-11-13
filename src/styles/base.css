@@ -91,3 +91,78 @@ span.rtrademark::after {
 	}
 
 }
+
+ol.sponsors-tiers {
+	margin: 15px auto 0;
+	list-style: none;
+	padding: 0;
+	position: relative;
+
+	li {
+		list-style: none;
+	}
+
+	.logo {
+		padding: 8px;
+	}
+
+	ul.sponsors-by-tier {
+		margin: 0;
+		padding: 0;
+	}
+
+	h2 {
+		text-align: center;
+		line-height: 120%;
+		border-bottom: 2px solid #ccc;
+		padding-bottom: 15px;
+	}
+
+
+	img {
+		margin: 0 auto;
+		width: 100%;
+		filter: none;
+		min-width: 100px;
+	}
+
+	.platinum {
+		h2.sponsors-tier-name {
+			font-size: 2.1em;
+		}
+
+		img {
+			max-width: 500px;
+		}
+	}
+
+	.gold {
+		h2.sponsors-tier-name {
+			font-size: 2.0em;
+		}
+
+		img {
+			max-width: 375px;
+		}
+	}
+
+	.silver {
+		h2.sponsors-tier-name {
+			font-size: 1.6em;
+		}
+
+		img {
+			max-width: 250px;
+		}
+	}
+
+	.bronze {
+		h2.sponsors-tier-name {
+			font-size: 1.3em;
+		}
+
+		img {
+			max-width: 175px;
+		}
+	}
+}

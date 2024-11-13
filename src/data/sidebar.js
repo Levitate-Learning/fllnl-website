@@ -27,7 +27,8 @@ export const SIDEBAR = [
 	},
 	{
 		text: "Sponsors",
-		link: "sponsors",
+		link: "2024-sponsors",
+		children: [{ text: "Become a Sponsor", link: "sponsors" }],
 	},
 	{
 		text: "About",
