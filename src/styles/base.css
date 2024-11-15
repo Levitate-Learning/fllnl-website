@@ -109,6 +109,10 @@ ol.sponsors-tiers {
 	ul.sponsors-by-tier {
 		margin: 0;
 		padding: 0;
+
+		li {
+			margin-bottom: 60px;
+		}
 	}
 
 	h2 {
@@ -152,6 +156,7 @@ ol.sponsors-tiers {
 		}
 
 		img {
+			max-height: 125px;
 			max-width: 250px;
 		}
 	}
@@ -162,7 +167,7 @@ ol.sponsors-tiers {
 		}
 
 		img {
-			max-width: 175px;
+			max-width: 150  px;
 		}
 	}
 }
